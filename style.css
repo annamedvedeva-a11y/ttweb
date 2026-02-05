@@ -1,0 +1,282 @@
+/* ===== GENERAL BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F8FF; 
+    color: #1D1D1D;
+    margin: 0;
+    padding-top: 100px; /* space for fixed header */
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #0A3D91; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* ===== BUTTON CONTAINER ===== */
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+/* ===== GENERAL BUTTONS ===== */
+.button-container button,
+.lesson-button {
+    background-color: #1E90FF; /* bright blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.button-container button:hover,
+.lesson-button:hover {
+    background-color: #FF6600; /* orange hover accent */
+}
+
+/* ===== LESSON BUTTONS ===== */
+.lesson-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px; /* bigger font for lessons */
+    padding: 15px 30px;
+}
+
+/* ===== FEATURES / CARDS ===== */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0A3D91;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0A3D91;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555555;
+}
+
+
+
+
+.lesson4-videos video {
+    width: 45%; /* side by side */
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ===== CONTENT BOXES ===== */
+.content-box {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 18px; /* bigger text in content boxes */
+    line-height: 1.6;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.section h2 {
+    color: #0A3D91;
+    margin-bottom: 20px;
+    font-size: 28px; /* bigger section titles */
+}
+
+/* ===== BACK LINK ===== */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #1E90FF;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #FF6600;
+}
+
+/* ===== PHOTO GALLERY ===== */
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.about-photo {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-page {
+    text-align: center;
+}
+
+.about-title-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0A3D91;
+    margin: 0;
+}
+
+.about-page .content-box {
+    text-align: center;
+}
+
+.about-page .about-photo {
+    margin: 20px;
+}
+
+/* ===== VIDEO TITLE ===== */
+.video-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1E90FF;
+}
+
+
+
+/* ===== CONTENTS PAGE ===== */
+.contents-page h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #0A3D91;
+    margin-bottom: 30px;
+}
+
+
+
+
+.lesson-layout {
+    display: flex;           /* Enables side-by-side layout */
+    gap: 30px;               /* Space between text and videos */
+    align-items: flex-start; /* Align top edges */
+}
+
+.lesson-text {
+    flex: 1;                 /* Text takes remaining space */
+    max-width: 600px;        /* Optional: limit width so it doesn't stretch too much */
+}
+
+.lesson-videos {
+    flex: 1;                 /* Videos column takes remaining space */
+    display: flex;           /* Arrange videos vertically */
+    flex-direction: column;
+    gap: 15px;               /* Space between videos */
+}
+
+.lesson-video {
+    width: 350px;  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+/* ===== VIDEO ===== */
+.lesson-video {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+.lesson-back {
+    margin-top: 30px;
+    text-align: center; /* center button like index page */
+}
+
+.lesson-back .lesson-button {
+    background-color: #1E90FF; /* same as index page buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lesson-back .lesson-button:hover {
+    background-color: #FF6600; /* same hover as index page */
+}
+
